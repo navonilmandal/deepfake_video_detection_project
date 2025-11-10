@@ -70,3 +70,97 @@ Grad-CAM Visualization Example:
 Install all dependencies using:
 
 pip install -r requirements.txt
+
+📈 Training Summary
+
+
+Total training epochs: 10
+
+
+Batch size: 16
+
+
+Frames per video: 8
+
+
+Achieved ~85–90% validation accuracy depending on dataset split
+
+
+Model saved as best_model_resnet18.pth
+
+
+
+🔍 Grad-CAM Explanation
+To make the model explainable, Grad-CAM visualizations are used.
+They highlight which regions of the face the model considers important while predicting.
+This helps demonstrate why the model labels a frame as real or fake — a great addition for academic presentations.
+
+🧪 Example Use Case
+
+
+Upload a new, unknown video in Colab.
+
+
+The model automatically:
+
+
+Extracts a few frames.
+
+
+Detects the face in each.
+
+
+Predicts the probability of the face being fake.
+
+
+Aggregates all frame scores for the final result.
+
+
+
+
+Example:
+Video: uploaded_video.mp4
+Prediction: FAKE
+Confidence: 83%
+
+
+💾 Saving and Deployment
+After training, the model is saved automatically as:
+/content/deepfake_project/best_model_resnet18.pth
+
+You can re-use this model later for real-time detection or deploy it in a web app using Flask/Streamlit.
+
+👨‍💻 Author
+Navonil Mandal
+🎓BIT Mesra
+📧 navonilmandal@gmail.com
+🌐 [GitHub Profile](https://github.com/navonilmandal)
+
+⭐ Acknowledgements
+
+
+PyTorch for deep learning framework
+
+
+OpenCV for image processing
+
+
+Mendeley Dataset for providing real & fake videos
+
+
+Google Colab for GPU-powered training environment
+
+
+
+🏁 Final Note
+This project demonstrates the use of deep learning and computer vision to detect AI-generated fake media.
+It’s simple, explainable, and perfect for academic submissions or AI/ML portfolios.
+⭐ If you find this useful, don’t forget to star the repo!
+
+---
+
+✅ Copy this entire block (everything inside the triple backticks) →  
+Paste it directly as your `README.md` file on GitHub.  
+
+Would you like me to now write a **GitHub repo description + topics/tags** (the short one-liner and tag list at the top of your GitHub repo)?
+
