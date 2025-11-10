@@ -24,3 +24,49 @@ It detects whether a video is *real* or *fake* by analyzing faces extracted from
 ---
 
 ## 🧩 Project Structure
+deepfake_project/
+│
+├── DeepFakeDetection.ipynb # Main Colab Notebook
+├── best_model_resnet18.pth # Saved Model File
+├── README.md # Project Documentation
+└── requirements.txt # Required Dependencies
+
+---
+
+## ⚙️ How to Run in Google Colab
+1. **Open the notebook** `DeepFakeDetection.ipynb` in Google Colab.  
+2. **Mount Google Drive:**
+   ```python
+   from google.colab import drive
+   drive.mount('/content/drive')
+Prepare your dataset inside Google Drive like this:
+
+deepfake_dataset/
+├── real/
+└── fake/
+
+
+Run all cells in order:
+
+Face extraction using Haar Cascade
+
+Train ResNet-18 model
+
+Evaluate test accuracy & generate Grad-CAMs
+
+Upload a new video to test predictions
+
+At the end, upload any new video and the model will predict whether it’s REAL or FAKE.
+
+📊 Example Output
+{'predicted_label': 'fake', 'avg_prob_fake': 0.84, 'frames_used': 8}
+
+
+Grad-CAM Visualization Example:
+(Shows what part of the face the model focused on)
+
+🧩 Requirements
+
+Install all dependencies using:
+
+pip install -r requirements.txt
