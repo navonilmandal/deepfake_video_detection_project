@@ -159,8 +159,3 @@ It’s simple, explainable, and perfect for academic submissions or AI/ML portfo
 
 ---
 
-✅ Copy this entire block (everything inside the triple backticks) →  
-Paste it directly as your `README.md` file on GitHub.  
-
-Would you like me to now write a **GitHub repo description + topics/tags** (the short one-liner and tag list at the top of your GitHub repo)?
-
