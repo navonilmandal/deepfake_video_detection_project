@@ -1,0 +1,11 @@
+torch
+torchvision
+torchaudio
+opencv-python-headless
+numpy
+scikit-learn
+matplotlib
+tqdm
+Pillow
+albumentations
+seaborn
